@@ -1,0 +1,68 @@
+2018-12-16 09:13:40.808  INFO 19564 --- [main] c.yile.boot.BootConcurrencyApplication   : Starting BootConcurrencyApplication on PC-201707261438 with PID 19564 (E:\workspace\boot\boot-concurrency\target\classes started by Administrator in E:\workspace\boot\boot-concurrency)
+2018-12-16 09:13:40.812  INFO 19564 --- [main] c.yile.boot.BootConcurrencyApplication   : No active profile set, falling back to default profiles: default
+2018-12-16 09:13:40.916  INFO 19564 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@769e7ee8: startup date [Sun Dec 16 09:13:40 CST 2018]; root of context hierarchy
+2018-12-16 09:13:41.991  WARN 19564 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.yile.boot]' package. Please check your configuration.
+2018-12-16 09:13:43.569  INFO 19564 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8085 (http)
+2018-12-16 09:13:43.603  INFO 19564 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-12-16 09:13:43.603  INFO 19564 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.32
+2018-12-16 09:13:43.617  INFO 19564 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\Program Files\Java\jdk1.8.0_151\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;d:\oracle\product\10.2.0\db_1\bin;C:\ProgramData\Oracle\Java\javapath;D:\Program Files\Java\jdk1.8.0_151\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;D:\apache-maven-3.5.0\bin;C:\Program Files\Git\cmd;C:\Program Files\TortoiseSVN\bin;C:\Users\Administrator\AppData\Local\GitHubDesktop\bin;.]
+2018-12-16 09:13:43.767  INFO 19564 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-12-16 09:13:43.768  INFO 19564 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2853 ms
+2018-12-16 09:13:43.852  INFO 19564 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-12-16 09:13:43.859  INFO 19564 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-12-16 09:13:43.859  INFO 19564 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-12-16 09:13:43.860  INFO 19564 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-12-16 09:13:43.860  INFO 19564 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-12-16 09:13:44.059  INFO 19564 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-16 09:13:44.365  INFO 19564 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@769e7ee8: startup date [Sun Dec 16 09:13:40 CST 2018]; root of context hierarchy
+2018-12-16 09:13:44.488  INFO 19564 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-12-16 09:13:44.490  INFO 19564 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-12-16 09:13:44.532  INFO 19564 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-16 09:13:44.533  INFO 19564 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-16 09:13:44.632  WARN 19564 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class
+2018-12-16 09:13:44.636  INFO 19564 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2018-12-16 09:13:44.655  INFO 19564 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2018-12-16 09:13:44.659 ERROR 19564 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+
+2018-12-16 09:16:00.522  INFO 20008 --- [main] c.yile.boot.BootConcurrencyApplication   : Starting BootConcurrencyApplication on PC-201707261438 with PID 20008 (E:\workspace\boot\boot-concurrency\target\classes started by Administrator in E:\workspace\boot\boot-concurrency)
+2018-12-16 09:16:00.539  INFO 20008 --- [main] c.yile.boot.BootConcurrencyApplication   : No active profile set, falling back to default profiles: default
+2018-12-16 09:16:00.621  INFO 20008 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@71b1176b: startup date [Sun Dec 16 09:16:00 CST 2018]; root of context hierarchy
+2018-12-16 09:16:03.459  INFO 20008 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8083 (http)
+2018-12-16 09:16:03.491  INFO 20008 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-12-16 09:16:03.491  INFO 20008 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.32
+2018-12-16 09:16:03.503  INFO 20008 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\Program Files\Java\jdk1.8.0_151\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;d:\oracle\product\10.2.0\db_1\bin;C:\ProgramData\Oracle\Java\javapath;D:\Program Files\Java\jdk1.8.0_151\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;D:\apache-maven-3.5.0\bin;C:\Program Files\Git\cmd;C:\Program Files\TortoiseSVN\bin;C:\Users\Administrator\AppData\Local\GitHubDesktop\bin;.]
+2018-12-16 09:16:03.663  INFO 20008 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-12-16 09:16:03.664  INFO 20008 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3043 ms
+2018-12-16 09:16:03.776  INFO 20008 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-12-16 09:16:03.781  INFO 20008 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-12-16 09:16:03.782  INFO 20008 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-12-16 09:16:03.782  INFO 20008 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-12-16 09:16:03.783  INFO 20008 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-12-16 09:16:03.981  INFO 20008 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-16 09:16:04.247  INFO 20008 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@71b1176b: startup date [Sun Dec 16 09:16:00 CST 2018]; root of context hierarchy
+2018-12-16 09:16:04.369  INFO 20008 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-12-16 09:16:04.372  INFO 20008 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-12-16 09:16:04.413  INFO 20008 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-16 09:16:04.413  INFO 20008 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-16 09:16:04.803  INFO 20008 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-12-16 09:16:05.056  INFO 20008 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8083 (http) with context path ''
+2018-12-16 09:16:05.061  INFO 20008 --- [main] c.yile.boot.BootConcurrencyApplication   : Started BootConcurrencyApplication in 5.116 seconds (JVM running for 5.709)
