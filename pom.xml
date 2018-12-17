@@ -19,6 +19,7 @@
 		<module>boot-common</module>
 		<module>boot-user</module>
 		<module>boot-web</module>
+		<module>boot-concurrency</module>
 	</modules>
 
 </project>
