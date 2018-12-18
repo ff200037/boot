@@ -5,10 +5,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 
 @SpringBootApplication(exclude = DataSourceAutoConfiguration.class)
-public class BootConcurrencyApplication{
+public class ConcurrencyApplication{
 
 	public static void main(String[] args) {
-		SpringApplication.run(BootConcurrencyApplication.class, args);
+		SpringApplication.run(ConcurrencyApplication.class, args);
 	}
 
 }
