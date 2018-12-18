@@ -8,7 +8,7 @@ import org.springframework.context.annotation.ImportResource;
 @SpringBootApplication
 @EnableAspectJAutoProxy
 @ImportResource({"classpath:*.xml"})
-public class BootWebApplication {
+public class BootWebApplication extends BaseApplication{
 
 	public static void main(String[] args) {
 		SpringApplication.run(BootWebApplication.class, args);

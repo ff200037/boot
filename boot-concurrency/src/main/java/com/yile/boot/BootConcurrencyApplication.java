@@ -3,29 +3,12 @@ package com.yile.boot;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
-import org.springframework.boot.web.servlet.FilterRegistrationBean;
-import org.springframework.context.annotation.Bean;
-import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
-import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
 
 @SpringBootApplication(exclude = DataSourceAutoConfiguration.class)
-public class BootConcurrencyApplication extends WebMvcConfigurerAdapter{
+public class BootConcurrencyApplication{
 
 	public static void main(String[] args) {
 		SpringApplication.run(BootConcurrencyApplication.class, args);
-	}
-	
-	@Bean
-	public FilterRegistrationBean httpFilter(){
-		FilterRegistrationBean registrationBean = new FilterRegistrationBean<>();
-		registrationBean.setFilter(new HttpFilter());
-		registrationBean.addUrlPatterns("/threadLocal/*");
-		return registrationBean;
-	}
-	
-	@Override
-	public void addInterceptors(InterceptorRegistry registry) {
-		registry.addInterceptor(new HttpInterceptor()).addPathPatterns("/**");
 	}
 
 }

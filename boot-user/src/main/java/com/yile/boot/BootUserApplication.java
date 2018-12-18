@@ -13,7 +13,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 @EnableTransactionManagement
 @MapperScan("com.yile.boot.user.mapper")
 @ImportResource({"classpath:*.xml"})
-public class BootUserApplication {
+public class BootUserApplication extends BaseApplication{
 
 	public static void main(String[] args) {
 		SpringApplication.run(BootUserApplication.class, args);
