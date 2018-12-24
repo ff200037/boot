@@ -26,7 +26,7 @@ public class ArithUtil {
 	
 	/**
 	 * 减法
-	 * @param v1 被减�?
+	 * @param v1 被减数
 	 * @param v2 减数
 	 * @return
 	 */
@@ -50,7 +50,7 @@ public class ArithUtil {
 	
 	/**
 	 * 除法（默认精度）
-	 * @param v1 被除�?
+	 * @param v1 被除数
 	 * @param v2 除数
 	 * @return
 	 */
@@ -60,7 +60,7 @@ public class ArithUtil {
 	
 	/**
 	 * 除法（指定精度）
-	 * @param v1 被除�?
+	 * @param v1 被除�?
 	 * @param v2 除数
 	 * @param scale 精度
 	 * @return
